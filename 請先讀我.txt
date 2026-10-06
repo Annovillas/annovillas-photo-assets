@@ -1,0 +1,58 @@
+AnnoVillas 網站素材整理說明（對應網站版本 v2.2.0）
+
+一、網站結構與資料夾對應
+
+  選單                    資料夾                              網頁位置
+  ─────────────────────────────────────────────────────────────────
+  山間堂 ▾
+    山間堂 Sankando       sankandou/                          /sankandou/
+    Sankando New Phase    sankando-new-phase/_overview/       /sankando-new-phase/
+      Villa Stello        sankando-new-phase/villa-stello/    /sankando-new-phase/villa-stello/
+      （另外 3 棟）        sankando-new-phase/villa-02～04/    同上規則
+  月江苑                  gekkouen/                           /gekkouen/
+  Glamping ▾              glamping/_overview/                 /glamping/（取代原貓穴頁，舊網址自動轉過去）
+    Premier Dome          glamping/premier-dome/              /glamping/premier-dome/
+    Family Type Dome      glamping/family-type-dome/          /glamping/family-type-dome/
+    Trailer Villa         glamping/trailer-villa/             /glamping/trailer-villa/
+  Villa The Cube          cube/                               /cube/
+  Foma Glamping           foma-glamping/_overview/            /foma-glamping/
+                          foma-glamping/type-01/              有不同房型就複製 type-01 並改名
+  常見問題                （沿用現有）
+  預約                    （程式自動產生，所有住宿都會出現在預約頁）
+
+  三個語言（日文、英文、繁體）都會照這個結構產生。
+
+二、三種資料夾
+
+  1. 住宿單位（例如 villa-stello、premier-dome）
+     → 一個可以預約的住宿。放圖片 + 填「介紹.txt」。
+
+  2. 總覽 _overview（例如 sankando-new-phase/_overview）
+     → 一個區域或營地的介紹頁，會自動列出底下所有住宿單位。
+       放 cover.jpg（總覽主視覺）+ 填「介紹.txt」。
+
+  3. 現有物業（sankandou、gekkouen、cube）
+     → 想換圖片才放，空著就沿用原網站的圖片和文字。
+
+三、圖片規則
+
+  - 命名：01.jpg、02.jpg、03.jpg…，數字就是網站上的顯示順序，01 是封面。
+  - 格式：jpg，長邊約 2000 像素，每張 1MB 以內。
+  - 封面建議用最有代表性的外觀或富士山景照片。
+  - 每個住宿 8～20 張最理想。建議順序：外觀 → 景觀 → 客廳 → 廚房 → 臥室 → 衛浴 → 戶外設施。
+
+四、新增或改名
+
+  - 4 棟 villa 的資料夾名稱 villa-02～04 請改成實際名稱，
+    英文小寫、單字之間用連字號，不要空格。例如 villa-luna。
+  - 以後新增住宿：在對應資料夾裡複製一個住宿資料夾、改名、換內容即可。
+  - 不需要的資料夾直接刪除。
+
+五、整理好後給我什麼
+
+  1. logo 資料夾裡的檔案
+  2. 所有「介紹.txt」和「網站設定.txt」
+  3. 圖片清單，在終端機執行：
+     cd /Users/12bigbig/Downloads/PP-annovillas-Newpage && find 素材 -type f | sort > 素材清單.txt
+
+  圖片本身不用傳給我，留在你電腦上即可。
